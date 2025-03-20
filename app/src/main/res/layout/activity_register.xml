@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etLoginLogo"
+        android:layout_width="@dimen/width_logo"
+        android:layout_height="@dimen/height_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="176dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginLogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/veterinarian_svgrepo_com"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_email" /> <!-- Si se ejecuta en cualquier dispositivo abarcará el ancho-->
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginUsername"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/vector_lock"
+        android:drawablePadding="12dp"
+        android:hint="@string/hint_password" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_margin="5dp"
+        android:text="¿Ya tiene cuenta? Ingrese."
+        android:textSize="16sp"
+        android:textColor="@color/cyan_500"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="Registrarse"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

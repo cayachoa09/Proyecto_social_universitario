@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Área para el video en tiempo real (80% de la pantalla) -->
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@android:color/black">
+
+        <!-- Placeholder para el video -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video en tiempo real"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Área para Sensor 1 (10% de la pantalla) -->
+    <FrameLayout
+        android:id="@+id/sensor1_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor 1: datos"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Área para Sensor 2 (10% de la pantalla) -->
+    <FrameLayout
+        android:id="@+id/sensor2_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_green_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor 2: datos"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>
